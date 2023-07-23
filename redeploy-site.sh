@@ -17,14 +17,7 @@ source python3-virtualenv/bin/activate
 pip install -r requirements.txt
 
 # start new detached Tmux session
-tmux kill-session -t myflaskapp
 tmux new-session -d -s myflaskapp
 
-# change directory to project folder within Tmux session
-tmux send-keys -t myflaskapp "cd pe portfolio" Enter
-
-# activate Python venv within Tmux session
-tmux send-keys -t myflaskapp "source python3-virtualenv/bin/activate" Enter
-
 # start Flask server within Tmux session
-tmux send-keys -t myflaskapp "python app.py" Enter
+tmux send-keys -t myflaskapp "flask run --host=0.0.0.0" Enter
