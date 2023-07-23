@@ -17,6 +17,7 @@ source python3-virtualenv/bin/activate
 pip install -r requirements.txt
 
 # start new detached Tmux session
+tmux kill-session -t myflaskapp
 tmux new-session -d -s myflaskapp
 
 # start Flask server within Tmux session
