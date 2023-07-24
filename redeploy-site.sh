@@ -9,7 +9,7 @@ cd pe-portfolio
 # fetch latest changes from main branch
 git fetch
 
-# Step 4: Reset the local repository to the latest changes from the main branch
+# reset the local repository to the latest changes from the main branch
 git reset origin/main --hard
 
 # activate Python venv and install dependencies
