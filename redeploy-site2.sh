@@ -14,4 +14,4 @@ source python3-virtualenv/bin/activate
 pip install -r requirements.txt
 
 # restart portfolio service
-systemctl restart myportfolio
+sudo systemctl restart myportfolio
